@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
       theme: ThemeData(
         textTheme: GoogleFonts.lexendTextTheme(textTheme),
+        primarySwatch: Colors.deepPurple,
       ),
     );
   }
