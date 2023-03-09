@@ -11,7 +11,7 @@ class ScreenSpacing extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        top: 40,
+        top: 60,
         right: 20,
         left: 20,
       ),

@@ -15,7 +15,7 @@ class Pokemon {
 
   factory Pokemon.fromJson(Map<String, dynamic> response, int index) {
     return Pokemon(
-      pokemonId: index + 1,
+      pokemonId: index,
       pokemonUrl: response["sprites"]["other"]["official-artwork"]
           ["front_default"],
       pokemonName: response["species"]["name"],

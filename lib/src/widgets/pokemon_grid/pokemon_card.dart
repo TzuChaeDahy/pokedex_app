@@ -12,9 +12,9 @@ class PokemonCard extends StatelessWidget {
     required this.pokemon,
   });
 
-  IsCapitalize isCapitalize = IsCapitalize();
+  final IsCapitalize isCapitalize = IsCapitalize();
 
-  Color? pokemonTheme(Pokemon pokemon) {
+  Color? choosePokemonBackground(Pokemon pokemon) {
     Color? chosenColor;
     switch (pokemon.pokemonMainType) {
       case "grass":
@@ -73,7 +73,7 @@ class PokemonCard extends StatelessWidget {
         Radius.circular(8),
       ),
       child: Container(
-        color: pokemonTheme(pokemon),
+        color: choosePokemonBackground(pokemon),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
